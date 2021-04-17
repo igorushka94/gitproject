@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type"
+	content = "text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href = "{% static 'home/style.css' %}">
+</head>
+<body>
+	<header class="header">
+		<div class="header-blok">
+			<h1>Ароматические свечи CandleKraft</h>
+		</div>
+	</header>
+	<div>
+		<h1>Список товаров</h1>
+		{% for candl in candles %}
+		<div class="box">
+			<img src="{{ candl.image }}">
+			<h2>{{ candl.title }}</h2>
+			<p>{{ candl.content }}</p>
+			<p>Цена: {{ candl.price }}</p>
+		</div>
+		{% endfor %}
+	</div>
+	<footer class="footer">
+		Копирайт {% now 'SHORT_DATETIME_FORMAT' %}
+	</footer>
+</body>
+</html>
