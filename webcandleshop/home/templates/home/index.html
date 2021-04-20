@@ -15,12 +15,14 @@
 	</header>
 	<div>
 		<h1>Список товаров</h1>
+		<a href="shoppingcart">Корзина</a>
 		{% for candl in candles %}
 		<div class="box">
 			<img src="{{ candl.image }}">
 			<h2>{{ candl.title }}</h2>
 			<p>{{ candl.content }}</p>
 			<p>Цена: {{ candl.price }}</p>
+			<input type="button" value="В корзину">
 		</div>
 		{% endfor %}
 	</div>
