@@ -1,34 +1,7 @@
-body {
-	background: #FFE4B5;
-}
-
-.header {
-	color: red;
-	background: green;
-	padding: 10px;
-	font-size: 15px;
-	opacity: 0.9;
-}
-
-.header-block {
-	position: absolute;
-	background-color: black;
-	padding: 10px;
-	margin: 10px;
-
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 70px;
-    width: 100%;
-}
-
-.box {
-  float: left;
-  width: 250px;
-  height: 100px;
-  margin: 1em;
+html { 
+	background: url(../home/image/bg.png) repeat; 
+	min-height: 100%; 
+	box-sizing: border-box; 
+	font: 12px/2 Helvetica Neue, Helvetica, Arial, sans-serif; 
+	color: #888; 
 }
